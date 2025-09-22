@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardy Store - Boutique PlayStation au Bénin</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/produits.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header spécifique PlayStation -->
+    <header class="header">
+        <nav class="nav-gauche">
+            <a href="catalogue.html">Catalogue</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="logo-centre">
+            <a href="index.html">
+                <img src="assets/images/icons/logo.svg" alt="Cardy Store">
+            </a>
+        </div>
+        
+        <div class="recherche-droite">
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un produit...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <a href="panier.html" class="panier-icon">🛒</a>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero">
+        <img src="assets/images/hero/arrivée.jpg" alt="Cardy Store - Votre boutique PlayStation">
+        <div class="hero-text">
+            <h1>Votre destination PlayStation au Bénin</h1>
+            <p>Consoles, jeux et services de qualité avec garantie</p>
+        </div>
+    </section>
+
+    <!-- Carousel 3 images -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="assets/images/carousel/slide1.jpg" alt="Promotion PlayStation">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/carousel/slide2.jpg" alt="Nouveaux jeux">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/carousel/slide3.jpg" alt="Services de réparation">
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+            <button class="carousel-prev">❮</button>
+            <button class="carousel-next">❯</button>
+        </div>
+    </section>
+
+    <!-- Section Produits Accueil -->
+    <section class="produits-section">
+        <h2>Nos Produits Phares</h2>
+        <div class="produits-grid">
+            <!-- PS5 Slim -->
+            <div class="produit-card" data-id="ps5-slim">
+                <img src="assets/images/produits/ps5-slim.jpg" alt="PS5 Slim" onclick="ouvrirProduit('ps5-slim')">
+                <div class="prix">390.000 FCFA</div>
+            </div>
+            
+            <!-- PS4 -->
+            <div class="produit-card" data-id="ps4">
+                <img src="assets/images/produits/ps4.jpg" alt="PS4" onclick="ouvrirProduit('ps4')">
+                <div class="prix">165.000 FCFA</div>
+            </div>
+            
+            <!-- PS3 Slim/Ultra Slim -->
+            <div class="produit-card" data-id="ps3-slim">
+                <img src="assets/images/produits/ps3-slim.jpg" alt="PS3 Slim/Ultra Slim" onclick="ouvrirProduit('ps3-slim')">
+                <div class="prix">85.000 FCFA</div>
+            </div>
+            
+            <!-- PS2 -->
+            <div class="produit-card" data-id="ps2">
+                <img src="assets/images/produits/ps2.jpg" alt="PS2" onclick="ouvrirProduit('ps2')">
+                <div class="prix">35.000 FCFA</div>
+            </div>
+        </div>
+        
+        <div class="voir-plus">
+            <a href="catalogue.html" class="btn">Voir tous les produits</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cardy Store</h3>
+                <p>Votre boutique spécialisée PlayStation à Cotonou</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Menontin, Église Catholique, Cotonou</p>
+                <p>📞 +229 01 66 36 47 30</p>
+                <p>🕒 Lun-Sam: 8h-20h, Dim: 10h-18h</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cardy Store. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+</html>

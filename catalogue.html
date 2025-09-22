@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Cardy Store</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/produits.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-gauche">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="logo-centre">
+            <a href="index.html">
+                <img src="assets/images/icons/logo.svg" alt="Cardy Store">
+            </a>
+        </div>
+        
+        <div class="recherche-droite">
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un produit...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <a href="panier.html" class="panier-icon">🛒<span class="panier-badge"></span></a>
+        </div>
+    </header>
+
+    <main class="catalogue-main">
+        <h1>Notre Catalogue PlayStation</h1>
+        <div class="catalogue-grid">
+            <!-- PS5 Slim -->
+            <div class="produit-card" data-id="ps5-slim">
+                <img src="assets/images/produits/ps5-slim.jpg" alt="PS5 Slim" onclick="ouvrirProduit('ps5-slim')">
+                <div class="prix">390.000 FCFA</div>
+            </div>
+            
+            <!-- PS4 Fat -->
+            <div class="produit-card" data-id="ps4">
+                <img src="assets/images/produits/ps4.jpg" alt="PS4 Fat" onclick="ouvrirProduit('ps4')">
+                <div class="prix">165.000 FCFA</div>
+            </div>
+            
+            <!-- PS3 Slim/Ultra Slim -->
+            <div class="produit-card" data-id="ps3-slim">
+                <img src="assets/images/produits/ps3-slim.jpg" alt="PS3 Slim/Ultra Slim" onclick="ouvrirProduit('ps3-slim')">
+                <div class="prix">85.000 FCFA</div>
+            </div>
+            
+            <!-- PS2 Fat -->
+            <div class="produit-card" data-id="ps2">
+                <img src="assets/images/produits/ps2.jpg" alt="PS2 Fat" onclick="ouvrirProduit('ps2')">
+                <div class="prix">35.000 FCFA</div>
+            </div>
+            
+            <!-- PS4 Slim -->
+            <div class="produit-card" data-id="ps4-slim">
+                <img src="assets/images/produits/ps4-slim.jpg" alt="PS4 Slim" onclick="ouvrirProduit('ps4-slim')">
+                <div class="prix">200.000 FCFA</div>
+            </div>
+            
+            <!-- PS4 Pro -->
+            <div class="produit-card" data-id="ps4-pro">
+                <img src="assets/images/produits/ps4-pro.jpg" alt="PS4 Pro" onclick="ouvrirProduit('ps4-pro')">
+                <div class="prix">275.000 FCFA</div>
+            </div>
+            
+            <!-- Pack 3 Jeux -->
+            <div class="produit-card" data-id="pack-3-jeux">
+                <img src="assets/images/produits/pack-3-jeux.jpg" alt="Pack 3 Jeux" onclick="ouvrirProduit('pack-3-jeux')">
+                <div class="prix">38.000 FCFA</div>
+            </div>
+            
+            <!-- Pack 6 Jeux -->
+            <div class="produit-card" data-id="pack-6-jeux">
+                <img src="assets/images/produits/pack-6-jeux.jpg" alt="Pack 6 Jeux" onclick="ouvrirProduit('pack-6-jeux')">
+                <div class="prix">65.000 FCFA</div>
+            </div>
+            
+            <!-- Pack 10 Jeux -->
+            <div class="produit-card" data-id="pack-10-jeux">
+                <img src="assets/images/produits/pack-10-jeux.jpg" alt="Pack 10 Jeux" onclick="ouvrirProduit('pack-10-jeux')">
+                <div class="prix">85.000 FCFA</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Même footer que index.html -->
+    </footer>
+
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/panier.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+</html>

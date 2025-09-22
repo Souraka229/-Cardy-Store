@@ -1,0 +1,91 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-gauche {
+        order: 1;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    .logo-centre {
+        position: static;
+        transform: none;
+        order: 0;
+    }
+    
+    .recherche-droite {
+        order: 2;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-bar input {
+        width: 150px;
+    }
+    
+    .hero {
+        height: 300px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .carousel-slide {
+        height: 250px;
+    }
+    
+    .produits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .produit-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .panier-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .panier-item img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-gauche {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .produits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .carousel-slide {
+        height: 200px;
+    }
+    
+    .panier-actions {
+        flex-direction: column;
+    }
+}

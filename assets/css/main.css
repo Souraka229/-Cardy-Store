@@ -1,0 +1,127 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Styles globaux */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0056D2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #003087;
+}
+
+/* Section Hero */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0056D2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Section Produits */
+.produits-section {
+    padding: 60px 20px;
+}
+
+.produits-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #0056D2;
+}
+
+.voir-plus {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer */
+.footer {
+    background: #001E4E;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #0056D2;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+    color: #0056D2;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #003087;
+    color: #ccc;
+}

@@ -1,0 +1,84 @@
+/* Header spécifique PlayStation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #000;
+    border-bottom: 2px solid #0056D2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Menu gauche */
+.nav-gauche {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-gauche a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-gauche a:hover {
+    color: #0056D2;
+}
+
+/* Logo centré */
+.logo-centre {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-centre img {
+    height: 40px;
+}
+
+/* Recherche droite */
+.recherche-droite {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    background: #001E4E;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    width: 200px;
+}
+
+.search-bar input::placeholder {
+    color: #ccc;
+}
+
+.search-btn {
+    background: #0056D2;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.panier-icon {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.panier-icon:hover {
+    color: #0056D2;
+}
